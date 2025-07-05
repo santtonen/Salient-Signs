@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salient Signs</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Salient Signs Logo" style="height: 60px;">
         <h1>Salient Signs</h1>
         <p class="tagline">Signs for your situation</p>
         <nav>
@@ -39,8 +46,18 @@
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@salientsigns.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <form action="https://formspree.io/f/xyyrrlep" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" name="_replyto" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
