@@ -1,87 +1,38 @@
 
 body {
-    font-family: 'Barlow Condensed', sans-serif;
     margin: 0;
-    padding: 0;
-    background: #fdfdfd;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #fff;
     color: #222;
 }
-
 header {
-    background: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+    padding: 1em 2em;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-
-.tagline {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    color: #ddd;
-}
-
 nav a {
-    margin: 0 1rem;
-    color: #ccc;
+    margin-right: 15px;
     text-decoration: none;
+    color: #333;
 }
-
-nav a:hover {
-    color: white;
-}
-
-section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.gallery {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 20px;
+    padding: 2em;
 }
-
-.gallery img {
+.grid img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    max-width: 500px;
-    margin-top: 1rem;
-}
-
-input, textarea {
-    padding: 0.75rem;
-    font-family: inherit;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background: #555;
-}
-
 footer {
     text-align: center;
-    padding: 1rem;
-    background: #eee;
-    margin-top: 2rem;
+    padding: 2em;
+    font-size: 0.9em;
+    color: #888;
 }
